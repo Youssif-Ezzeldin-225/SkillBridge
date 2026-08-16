@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge | ابدأ مسارك المهني من هنا</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background-color: #f0f6ff;
+        }
+        .focus-ring-brand {
+            --tw-ring-color: #2d74da;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #ffffff;
+            background-image: radial-gradient(#dbe8fb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" style="direction: ltr;">
+            <a href="#" class="text-2xl font-bold text-[#2d74da]">SkillBridge</a>
+            <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="#tracks" class="text-gray-600 hover:text-[#2d74da] transition-colors">Courses</a>
+                <a href="Community.html" class="text-gray-600 hover:text-[#2d74da] transition-colors" style="padding-left: 30px;">Community</a>
+                <a href="Teacher.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Teachers</a>
+                <a href="Company.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Company?</a>
+            </div>
+             <div class="hidden md:flex items-center">
+                <a href="Courses.html" class="bg-[#2d74da] text-white py-2 px-5 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                    Start Now
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <ion-icon name="menu-outline" class="w-7 h-7"></ion-icon>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4">
+            <a href="#tracks" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff]">courses</a>
+            <a href="Community.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff]">Community</a>
+            <a href="Company.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff]">Company</a>
+            <a href="Teacher.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff]">Teacher</a>
+             <a href="Courses.html" class="block text-center bg-[#2d74da] text-white mx-4 mt-2 py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">
+                Start Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-tight">
+                    من التعلّم إلى التوظيف مباشرة
+                </h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                    SkillBridge هي بوابتك لاكتساب المهارات التي يطلبها سوق العمل، والحصول على فرصة وظيفية حقيقية لدى أفضل الشركات الشريكة لنا.
+                </p>
+                <a href="#tracks" class="bg-[#2d74da] text-white py-3 px-10 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    اكتشف المسارات
+                </a>
+            </div>
+        </section>
+
+        <!-- "Why SkillBridge?" Section -->
+        <section class="py-16 md:py-24">
+             <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <ion-icon name="code-slash-outline" class="text-4xl text-[#2d74da] mx-auto mb-4"></ion-icon>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">محتوى عملي وتطبيقي</h3>
+                        <p class="text-gray-600">مناهج مصممة لتزويدك بالمهارات العملية من خلال مشاريع حقيقية.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <ion-icon name="briefcase-outline" class="text-4xl text-[#2d74da] mx-auto mb-4"></ion-icon>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">فرص توظيف مضمونة</h3>
+                        <p class="text-gray-600">نرشحك مباشرة لشركائنا من الشركات بعد إتمامك للمسار بنجاح.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <ion-icon name="school-outline" class="text-4xl text-[#2d74da] mx-auto mb-4"></ion-icon>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">مدرّسون خبراء</h3>
+                        <p class="text-gray-600">تعلّم من أفضل الخبراء في مجالاتهم، واحصل على دعم مستمر.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracks Section -->
+        <section id="tracks" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">أشهر المسارات التعليمية</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Track Card -->
+                    <a href="Courses/Tracks/Web_Development.html" class="block bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-[#2d74da] transition-colors">Programming & Software Development</h3>
+                            <p class="text-sm text-gray-600 mt-1">مسارات متكاملة في تطوير الويب والتطبيقات.</p>
+                        </div>
+                    </a>
+                    <!-- Track Card -->
+                    <a href="#" class="block bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-[#2d74da] transition-colors">AI & Data Science</h3>
+                            <p class="text-sm text-gray-600 mt-1">ادخل عالم الذكاء الاصطناعي وعلوم البيانات.</p>
+                        </div>
+                    </a>
+                    <!-- Track Card -->
+                    <a href="#" class="block bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-[#2d74da] transition-colors">Design & Creativity</h3>
+                            <p class="text-sm text-gray-600 mt-1">أطلق إبداعك في تصميم الواجهات والتجربة.</p>
+                        </div>
+                    </a>
+                    <!-- Track Card -->
+                    <a href="#" class="block bg-white rounded-xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-gray-800 group-hover:text-[#2d74da] transition-colors">Business & Marketing</h3>
+                            <p class="text-sm text-gray-600 mt-1">طور مهاراتك في إدارة الأعمال والتسويق الرقمي.</p>
+                        </div>
+                    </a>
+                    <!-- You can add more track cards here -->
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="Courses.html" class="bg-transparent border-2 border-[#2d74da] text-[#2d74da] py-2 px-8 rounded-lg font-semibold hover:bg-[#2d74da] hover:text-white transition-all duration-300">
+                        عرض كل المسارات
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">رحلتك نحو وظيفة أحلامك</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <div class="w-20 h-20 bg-white text-[#2d74da] text-3xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">1</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">اختر مسارك</h3>
+                        <p class="text-gray-600">تصفح المسارات التعليمية واختر التخصص الذي يناسب شغفك وأهدافك المهنية.</p>
+                    </div>
+                     <div>
+                        <div class="w-20 h-20 bg-white text-[#2d74da] text-3xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">2</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">تعلّم وتأهّل</h3>
+                        <p class="text-gray-600">ادرس المحتوى العملي، أنجز المشاريع، واجتز الاختبارات النهائية لتثبت مهاراتك.</p>
+                    </div>
+                     <div>
+                        <div class="w-20 h-20 bg-white text-[#2d74da] text-3xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">3</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">احصل على وظيفة</h3>
+                        <p class="text-gray-600">بعد التخرج، نقوم بترشيحك مباشرةً للشركات الباحثة عن مواهب مثلك.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">هل أنت مستعد لبدء مسيرتك المهنية؟</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    انضم إلى آلاف الطلاب الذين غيروا مستقبلهم مع SkillBridge. خطوتك الأولى نحو وظيفة أحلامك تبدأ من هنا.
+                </p>
+                <a href="signup.html" class="bg-[#2d74da] text-white py-3 px-10 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    سجّل مجاناً
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 SkillBridge. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

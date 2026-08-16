@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انضم إلينا كمدرّس | SkillBridge</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Apply Cairo font to the body for Arabic text */
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+        /* Custom focus ring color to match the brand */
+        .focus-ring-brand {
+            --tw-ring-color: #2d74da;
+        }
+        /* Custom scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#f0f6ff]">
+
+    <!-- Header & Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" style="direction: ltr;">
+            <a href="homepage.html" class="text-2xl font-bold text-[#2d74da]">SkillBridge</a>
+            <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="homepage.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Main</a>
+                <a href="Courses.html" class="text-gray-600 hover:text-[#2d74da] transition-colors" style="padding-left: 30px;">Courses</a>
+                <a href="Company.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Company?</a>
+            </div>
+             <div class="hidden md:flex items-center">
+                <a href="#apply-form" class="bg-[#2d74da] text-white py-2 px-5 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                    Join Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4">
+            <a href="homepage.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">الرئيسية</a>
+            <a href="Courses.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">المسارات</a>
+            <a href="Company.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">للشركات</a>
+            <a href="#apply-form" class="block text-center bg-[#2d74da] text-white mx-4 mt-2 py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">
+                انضم كمدرّس
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+                    شارك خبرتك، وألهم جيلاً جديداً
+                </h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                    في SkillBridge، نبحث عن أفضل الخبراء والمدرّبين لتمكين المتعلّمين بالمهارات التي يحتاجها سوق العمل. انضم إلينا وكن جزءاً من رحلة تغيير مستقبل التعليم والتوظيف.
+                </p>
+                <a href="#apply-form" class="bg-[#2d74da] text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    قدّم طلبك الآن
+                </a>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">لماذا تختار التدريس عبر SkillBridge؟</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Benefit Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">وصول واسع للطلاب</h3>
+                        <p class="text-gray-600">
+                            قدّم معرفتك لآلاف المتعلّمين الشغوفين الذين يبحثون عن محتوى عالي الجودة مرتبط مباشرة بسوق العمل.
+                        </p>
+                    </div>
+                    <!-- Benefit Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">فرص عمل حقيقية</h3>
+                        <p class="text-gray-600">
+                            لا تقتصر مهمتك على التدريس فقط، بل ستحصل على فرص للعمل كشريك تدريب أو كموظف لدى شركائنا من الشركات.
+                        </p>
+                    </div>
+                    <!-- Benefit Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 12v.01M12 12v.01M12 16v.01M12 16v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">تحقيق عائد مادي</h3>
+                        <p class="text-gray-600">
+                            نقدم لك منصة متكاملة لتحقيق دخل من خبرتك عبر تقديم دورات مدفوعة وبناء ملف مهني معتمد وقوي.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form Section -->
+        <section id="apply-form" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center text-gray-800 mb-2">استمارة الانضمام</h2>
+                    <p class="text-center text-gray-600 mb-10">املأ البيانات التالية، وسيقوم فريقنا بمراجعة طلبك والتواصل معك في أقرب وقت.</p>
+                    
+                    <!-- Form Success Message -->
+                    <div id="success-message" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-6" role="alert">
+                      <strong class="font-bold">تم الإرسال بنجاح!</strong>
+                      <span class="block sm:inline">شكراً لاهتمامك، سنقوم بمراجعة طلبك قريباً.</span>
+                    </div>
+
+                    <form id="teacher-application-form" class="space-y-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700 mb-2">الاسم بالكامل</label>
+                            <input type="text" name="fullName" id="fullName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" placeholder="مثال: يوسف محمد">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" name="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <!-- Specialization -->
+                        <div>
+                            <label for="specialization" class="block text-sm font-medium text-gray-700 mb-2">مجال التخصص</label>
+                            <select id="specialization" name="specialization" required class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus-ring-brand">
+                                <option value="" disabled selected>اختر تخصصك الرئيسي</option>
+                                <option value="Programming & Software Development">Programming & Software Development</option>
+                                <option value="AI & Data Science">AI & Data Science</option>
+                                <option value="Networking & Cybersecurity">Networking & Cybersecurity</option>
+                                <option value="Design & Creativity">Design & Creativity</option>
+                                <option value="Business & Marketing">Business & Marketing</option>
+                                <option value="Emerging Technologies">Emerging Technologies (Blockchain, IoT, AR/VR)</option>
+                                <option value="Embedded Systems">Embedded Systems</option>
+                                <option value="Software Testing">Software Testing</option>
+                                <option value="Freelancing">Freelancing</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+
+                        <!-- Years of Experience -->
+                        <div>
+                            <label for="experience" class="block text-sm font-medium text-gray-700 mb-2">سنوات الخبرة العملية</label>
+                            <input type="number" name="experience" id="experience" min="0" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" placeholder="مثال: 5">
+                        </div>
+
+                        <!-- CV Upload -->
+                        <div>
+                            <label for="cv" class="block text-sm font-medium text-gray-700 mb-2">ارفع سيرتك الذاتية (PDF, DOC, DOCX)</label>
+                            <input type="file" name="cv" id="cv" required accept=".pdf,.doc,.docx" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#eaf2ff] file:text-[#2d74da] hover:file:bg-blue-200">
+                        </div>
+
+                        <!-- Reason for Joining -->
+                        <div>
+                            <label for="reason" class="block text-sm font-medium text-gray-700 mb-2">لماذا ترغب في الانضمام إلى SkillBridge؟</label>
+                            <textarea id="reason" name="reason" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" placeholder="أخبرنا عن دوافعك وشغفك بالتعليم..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full bg-[#2d74da] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus-ring-brand">
+                                إرسال الطلب
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 SkillBridge. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Form Submission -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission handling
+        const form = document.getElementById('teacher-application-form');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission for this demo
+            
+            // Here you would typically send the form data to a server.
+            // For this example, we'll just show the success message.
+            
+            // Hide the form and show the success message
+            form.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+            
+            // Scroll to the top of the form section to make the message visible
+            const formSection = document.getElementById('apply-form');
+            formSection.scrollIntoView();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>للشركات - وظّف أفضل المواهب | SkillBridge</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Apply Cairo font to the body for Arabic text */
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+        }
+        /* Custom focus ring color to match the brand */
+        .focus-ring-brand {
+            --tw-ring-color: #2d74da;
+        }
+        /* Custom scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#f0f6ff]">
+
+    <!-- Header & Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" style="direction: ltr;">
+            <a href="homepage.html" class="text-2xl font-bold text-[#2d74da]">SkillBridge</a>
+            <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="homepage.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Main</a>
+                <a href="Courses.html" class="text-gray-600 hover:text-[#2d74da] transition-colors" style="padding-left: 30px;">Courses</a>
+                <a href="Teacher.html" class="text-gray-600 hover:text-[#2d74da] transition-colors">Teachers</a>
+            </div>
+             <div class="hidden md:flex items-center">
+                <a href="#apply-form" class="bg-[#2d74da] text-white py-2 px-5 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                    Submit a Job
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4">
+            <a href="homepage.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">الرئيسية</a>
+            <a href="Courses.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">المسارات</a>
+            <a href="Company.html" class="block text-center py-2 px-4 text-sm text-gray-600 hover:bg-[#f0f6ff] hover:text-[#2d74da]">للشركات</a>
+            <a href="#apply-form" class="block text-center bg-[#2d74da] text-white mx-4 mt-2 py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors">
+                انضم كمدرّس
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 md:py-28 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+                    الحل الأذكى لتوظيف الكفاءات التقنية
+                </h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                    وفّر الوقت والتكلفة واحصل على مرشحين مؤهلين عمليًا وجاهزين للانضمام لفريقك. SkillBridge يربطك مباشرة بخريجي مساراتنا المكثفة.
+                </p>
+                <a href="#get-started" class="bg-[#2d74da] text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    ابحث عن أفضل الكفاءات
+                </a>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">لماذا تختار التوظيف عبر SkillBridge؟</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Benefit Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">وصول سريع للمواهب</h3>
+                        <p class="text-gray-600">
+                            احصل على قائمة مختصرة من المرشحين الذين أتموا مساراتنا بنجاح، وتم اختبار مهاراتهم عبر مشاريع عملية حقيقية.
+                        </p>
+                    </div>
+                    <!-- Benefit Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">مرشحون جاهزون للعمل</h3>
+                        <p class="text-gray-600">
+                            خريجونا لا يمتلكون المعرفة النظرية فقط، بل الخبرة العملية اللازمة للبدء في الإنتاج من اليوم الأول.
+                        </p>
+                    </div>
+                    <!-- Benefit Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="bg-[#eaf2ff] text-[#2d74da] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">عملية توظيف فعّالة</h3>
+                        <p class="text-gray-600">
+                            استخدم لوحة التحكم الخاصة بك لنشر الوظائف، وتصفية المرشحين حسب المهارة، واستلام ترشيحاتنا الذكية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">آلية العمل في 3 خطوات بسيطة</h2>
+                <div class="relative">
+                    <!-- Dotted line for desktop -->
+                    <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 border-t-2 border-dashed border-gray-300" style="margin-top: -1px;"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                        <!-- Step 1 -->
+                        <div class="text-center">
+                            <div class="relative mb-4">
+                                <div class="w-20 h-20 bg-[#2d74da] text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">1</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">انشر وظيفتك</h3>
+                            <p class="text-gray-600">
+                                سجّل حساب شركتك، وأضف تفاصيل الوظيفة الشاغرة والمهارات المطلوبة بدقة.
+                            </p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="text-center">
+                            <div class="relative mb-4">
+                                <div class="w-20 h-20 bg-[#2d74da] text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">2</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">استقبل الترشيحات</h3>
+                            <p class="text-gray-600">
+                                يقوم نظامنا الذكي بمطابقة متطلباتك مع مهارات خريجينا ويرسل لك أفضل المرشحين.
+                            </p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="text-center">
+                            <div class="relative mb-4">
+                                <div class="w-20 h-20 bg-[#2d74da] text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">3</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">وظّف الأفضل</h3>
+                            <p class="text-gray-600">
+                                راجع ملفات المرشحين، وقم بإجراء المقابلات، وعيّن الموهبة المثالية لفريقك بكل سهولة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started CTA Section -->
+        <section id="get-started" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">هل أنت مستعد لبناء فريق أحلامك؟</h2>
+                    <p class="text-gray-600 mb-8">
+                        انضم إلى شبكة شركائنا اليوم وابدأ في رحلة توظيف أسرع وأكثر كفاءة.
+                    </p>
+                    <a href="#" class="bg-[#2d74da] text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        ابدأ الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 SkillBridge. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

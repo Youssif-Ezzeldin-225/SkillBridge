@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجتمع SkillBridge | تواصل، تعلّم، وانطلق</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="Courses.css">
+
+    <!-- Google Fonts: Inter & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Heroicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background-color: #f0f6ff;
+        }
+        .focus-ring-brand {
+            --tw-ring-color: #2d74da;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for chat */
+        .chatbot-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+        .chatbot-messages::-webkit-scrollbar-track {
+            background: #eaf2ff;
+        }
+        .chatbot-messages::-webkit-scrollbar-thumb {
+            background-color: #2d74da;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navbar -->
+
+<header class="navbar" style="direction: ltr;">
+  <div class="logo">SkillBridge</div>
+  <nav class="nav-links">
+    <div class="dropdown">
+      <a href="Courses.html" aria-haspopup="true" aria-expanded="false">Courses ▼</a>
+      <div class="dropdown-content">
+        <a href="Courses/Tracks/Web_Development.html">Programming & Software Development</a>
+        <a href="#track-ai">AI & Data Science</a>
+        <a href="#track-network">Networking & Cybersecurity</a>
+        <a href="#track-design">Design & Creativity</a>
+        <a href="#track-businessmarketing">Business & Marketing</a>
+        <a href="#track-emerging">Emerging Technologies</a>
+        <a href="#track-embedded">Embedded Systems</a>
+        <a href="#track-elearning">E-learning</a>
+        <a href="#track-freelancing">Freelancing</a>
+        <a href="#track-testing">Software Testing</a>
+        <a href="#track-python">Python Programming</a>
+        <a href="#track-english">English Language</a>
+        <a href="#track-gamedev">Game Development</a>
+        <a href="#track-appdev">App Development</a>
+      </div>
+    </div>
+    <a href="Teacher.html">Instructors</a>
+    <a href="Community.html">AI Agent</a>
+    <a href="Community.html">Community</a>
+  </nav>
+
+  <div class="search-login">
+    <input type="text" placeholder="Search..." aria-label="Search courses">
+    <a href="#" class="subscribe-btn">Subscribe</a>
+    <a href="login.html" class="login-btn">Log in</a>
+    <a href="signup.html" class="signup-btn">Sign up</a>
+  </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Left Column: AI Chatbot & Support -->
+            <aside class="lg:col-span-1 space-y-6">
+                <!-- AI Roadmap Generator -->
+                <div id="ai-chatbot-container" class="bg-white rounded-xl shadow-lg p-5 flex flex-col transition-all duration-300">
+                    <div id="chatbot-intro" class="text-center">
+                        <div class="w-16 h-16 bg-[#eaf2ff] text-[#2d74da] rounded-full flex items-center justify-center mx-auto mb-4">
+                            <ion-icon name="sparkles-outline" class="w-8 h-8"></ion-icon>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800 mb-2">خطتك التعليمية تبدأ هنا</h2>
+                        <p class="text-gray-600 mb-4 text-sm">أجب عن بعض الأسئلة، وسيقوم مساعدنا الذكي ببناء خارطة طريق مخصصة لك.</p>
+                        <button id="start-chat-btn" class="w-full bg-[#2d74da] text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            ابدأ الآن
+                        </button>
+                    </div>
+                    <div id="chatbot-ui" class="hidden flex-1 flex-col h-96">
+                        <div class="flex items-center mb-4 border-b pb-3">
+                            <ion-icon name="rocket-outline" class="text-[#2d74da] w-6 h-6 ml-2"></ion-icon>
+                            <h3 class="text-lg font-bold text-gray-800">المساعد الذكي</h3>
+                        </div>
+                        <div id="chatbot-messages" class="flex-1 space-y-4 overflow-y-auto pr-2 chatbot-messages">
+                            <!-- Messages will be injected here -->
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <input type="text" id="chat-input" placeholder="اكتب إجابتك..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" disabled>
+                            <button id="send-btn" class="mr-2 bg-[#2d74da] text-white p-2 rounded-full hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+                                <ion-icon name="send-outline" class="w-5 h-5"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support & Teachers -->
+                <div class="bg-white rounded-xl shadow-lg p-5 space-y-4">
+                    <h3 class="text-lg font-bold text-gray-800 border-b pb-2">تحتاج مساعدة؟</h3>
+                    <button class="w-full flex items-center text-left p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <ion-icon name="headset-outline" class="w-6 h-6 text-[#2d74da] ml-3"></ion-icon>
+                        <div>
+                            <p class="font-semibold text-gray-700">تواصل مع الدعم الفني</p>
+                            <p class="text-sm text-gray-500">لدينا فريق جاهز لمساعدتك.</p>
+                        </div>
+                    </button>
+                     <button class="w-full flex items-center text-left p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <ion-icon name="school-outline" class="w-6 h-6 text-[#2d74da] ml-3"></ion-icon>
+                        <div>
+                            <p class="font-semibold text-gray-700">اسأل المدرّسين</p>
+                            <p class="text-sm text-gray-500">احصل على إجابات من الخبراء.</p>
+                        </div>
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Right Column: Community Feed -->
+            <div class="lg:col-span-2">
+                <!-- Create Post -->
+                <div class="bg-white rounded-xl shadow-lg p-5 mb-6">
+                    <textarea id="post-content" class="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus-ring-brand" rows="3" placeholder="بماذا تفكر؟ شارك سؤالك أو خبرتك مع المجتمع..."></textarea>
+                    <div class="flex justify-end mt-3">
+                        <button id="create-post-btn" class="bg-[#2d74da] text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            نشر
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Feed -->
+                <div id="community-feed" class="space-y-6">
+                    <!-- Post 1 (Instructor Announcement) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
+                        <div class="flex items-start">
+                            <img src="https://placehold.co/40x40/2d74da/ffffff?text=S" alt="Instructor Avatar" class="w-10 h-10 rounded-full ml-4">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-bold text-gray-800">أحمد المصري <span class="text-xs font-normal text-white bg-blue-500 px-2 py-0.5 rounded-full">مدرّس</span></p>
+                                        <p class="text-xs text-gray-500">منذ 5 ساعات</p>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    مرحباً بالجميع! تم إضافة ورشة عمل جديدة في مسار "تطوير الواجهات الأمامية" عن أساسيات React Hooks. ستكون الورشة مباشرة يوم الخميس القادم. لا تفوتوها!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post 2 (Student Question) -->
+                    <div class="bg-white rounded-xl shadow-lg p-5">
+                        <div class="flex items-start">
+                            <img src="https://placehold.co/40x40/f0f6ff/000000?text=F" alt="Student Avatar" class="w-10 h-10 rounded-full ml-4">
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="font-bold text-gray-800">فاطمة علي</p>
+                                        <p class="text-xs text-gray-500">منذ يوم واحد</p>
+                                    </div>
+                                </div>
+                                <p class="mt-3 text-gray-700">
+                                    يا جماعة، أواجه مشكلة في فهم الـ Asynchronous JavaScript. هل يمكن لأحد أن يشرح ببساطة الفرق بين Promises و async/await؟ أو يرشح مصادر مفيدة؟
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+
+        // --- Community Feed ---
+        const createPostBtn = document.getElementById('create-post-btn');
+        const postContent = document.getElementById('post-content');
+        const communityFeed = document.getElementById('community-feed');
+
+        createPostBtn.addEventListener('click', () => {
+            const content = postContent.value.trim();
+            if (content) {
+                const newPost = document.createElement('div');
+                newPost.className = 'bg-white rounded-xl shadow-lg p-5 animate-fade-in';
+                newPost.innerHTML = `
+                    <div class="flex items-start">
+                        <img src="https://placehold.co/40x40/eaf2ff/2d74da?text=Me" alt="My Avatar" class="w-10 h-10 rounded-full ml-4">
+                        <div class="flex-1">
+                            <div>
+                                <p class="font-bold text-gray-800">أنت</p>
+                                <p class="text-xs text-gray-500">الآن</p>
+                            </div>
+                            <p class="mt-3 text-gray-700">${content.replace(/\n/g, '<br>')}</p>
+                        </div>
+                    </div>
+                `;
+                communityFeed.prepend(newPost);
+                postContent.value = '';
+            }
+        });
+
+        // --- AI Chatbot Logic ---
+        const startChatBtn = document.getElementById('start-chat-btn');
+        const chatbotIntro = document.getElementById('chatbot-intro');
+        const chatbotUi = document.getElementById('chatbot-ui');
+        const messagesContainer = document.getElementById('chatbot-messages');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        const questions = [
+            "أهلاً بك! أنا هنا لمساعدتك في بناء خطتك التعليمية. أولاً، ما هو المجال الذي يثير اهتمامك أكثر؟ (مثال: تطوير الويب، علم البيانات، التسويق الرقمي)",
+            "رائع! وما هو مستوى خبرتك الحالي في هذا المجال؟ (مبتدئ، متوسط، متقدم)",
+            "ممتاز. أخيراً، ما هو هدفك المهني النهائي؟ (مثال: الحصول على وظيفة كمطور واجهات أمامية، إطلاق مشروعي الخاص، العمل كمستقل)"
+        ];
+
+        let currentQuestionIndex = 0;
+        const userAnswers = {};
+
+        startChatBtn.addEventListener('click', () => {
+            chatbotIntro.classList.add('hidden');
+            chatbotUi.classList.remove('hidden');
+            chatbotUi.classList.add('flex');
+            askQuestion();
+        });
+
+        function askQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                addBotMessage(questions[currentQuestionIndex]);
+                chatInput.disabled = false;
+                sendBtn.disabled = false;
+                chatInput.focus();
+            } else {
+                generateRoadmap();
+            }
+        }
+
+        function addBotMessage(message, isRoadmap = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex items-start';
+            let contentHTML = isRoadmap ? 
+                `<pre class="whitespace-pre-wrap bg-gray-100 p-3 rounded-lg text-sm w-full">${message}</pre>` :
+                `<p class="bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs">${message}</p>`;
+
+            messageDiv.innerHTML = `
+                <div class="w-8 h-8 bg-[#eaf2ff] text-[#2d74da] rounded-full flex items-center justify-center flex-shrink-0 ml-2">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                </div>
+                ${contentHTML}
+            `;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function addUserMessage(message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex justify-end';
+            messageDiv.innerHTML = `<p class="bg-[#2d74da] text-white p-3 rounded-lg max-w-xs">${message}</p>`;
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        async function handleUserInput() {
+            const answer = chatInput.value.trim();
+            if (!answer) return;
+
+            addUserMessage(answer);
+            userAnswers[currentQuestionIndex] = answer;
+            
+            chatInput.value = '';
+            chatInput.disabled = true;
+            sendBtn.disabled = true;
+
+            currentQuestionIndex++;
+            setTimeout(askQuestion, 500);
+        }
+
+        sendBtn.addEventListener('click', handleUserInput);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleUserInput();
+            }
+        });
+
+        async function generateRoadmap() {
+    addBotMessage("شكراً لك! أقوم الآن بإعداد خطتك المخصصة...");
+
+    const prompt = `
+        Based on the following user profile, generate a personalized learning roadmap in Arabic.
+        The output should be in simple, clear Markdown format.
+        Do not include any introductory or concluding sentences outside of the roadmap itself.
+        The roadmap should have a main title, and then sections for each phase (e.g., Phase 1: The Foundation), with bullet points for skills, tools, and a small project idea.
+
+        User Profile:
+        - Field of Interest: ${userAnswers[0]}
+        - Experience Level: ${userAnswers[1]}
+        - Career Goal: ${userAnswers[2]}
+    `;
+
+    try {
+        // This is a mock API call for demonstration.
+        // Replace this with the actual Gemini API call.
+        const text = await callGeminiApi(prompt);
+        addBotMessage(text, true);
+
+    } catch (error) {
+        console.error("Error calling Gemini API:", error);
+        addBotMessage("عذراً، حدث خطأ أثناء إنشاء الخطة. يرجى المحاولة مرة أخرى.");
+    }
+}
+
+// --- Gemini API Call ---
+async function callGeminiApi(prompt) {
+    console.log("Sending prompt to Gemini:", prompt);
+    
+    // Simulating a delay
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
+    // Mock response based on a common case
+    if (userAnswers[0].includes("ويب") && userAnswers[1].includes("مبتدئ")) {
+        return `
+# خارطة طريق لتصبح مطور واجهات أمامية
+
+### المرحلة الأولى: الأساسيات الصلبة (1-2 شهر)
+* **المهارات:** HTML5, CSS3, JavaScript (ES6+)
+* **الأدوات:** VS Code, Git & GitHub, Chrome DevTools
+* **مشروع صغير:** بناء صفحة شخصية (Portfolio) بسيطة وتفاعلية.
+
+### المرحلة الثانية: إتقان الـ Frameworks (2-3 أشهر)
+* **المهارات:** تعلم إطار عمل مثل React.js, فهم المكونات (Components), الحالة (State), والـ Props.
+* **الأدوات:** Node.js/npm, Create React App
+* **مشروع صغير:** بناء تطبيق قائمة مهام (To-Do App) باستخدام React.
+
+### المرحلة الثالثة: الاحتراف والتخصص (3 أشهر)
+* **المهارات:** استدعاء البيانات من APIs, اختبار الوحدات (Unit Testing), تحسين الأداء.
+* **الأدوات:** Axios/Fetch, Jest, Lighthouse
+* **مشروع التخرج:** بناء واجهة لمتجر إلكتروني بسيط يعرض منتجات من API.
+        `;
+    } else {
+        return `
+# خارطة طريق مخصصة في ${userAnswers[0]}
+
+### المرحلة الأولى: فهم الأساسيات
+* **المهارات:** ابدأ بتعلم المبادئ الأساسية للمجال.
+* **الأدوات:** تعرف على الأدوات الرئيسية التي يستخدمها المحترفون.
+* **مشروع صغير:** قم بتطبيق ما تعلمته في مشروع بسيط.
+
+### المرحلة الثانية: التعمق والتطبيق
+* **المهارات:** انتقل إلى مفاهيم أكثر تقدماً.
+* **الأدوات:** استخدم أدوات متقدمة لبناء مشاريع أكبر.
+* **مشروع متوسط:** بناء مشروع يحل مشكلة حقيقية صغيرة.
+        `;
+    }
+}
+
+    </script>
+</body>
+</html>
