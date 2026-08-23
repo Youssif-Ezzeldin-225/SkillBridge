@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programming & Software Development Courses - SkillBridge</title>
+  <link rel="stylesheet" href="../../Courses.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">SkillBridge</div>
+  <nav class="nav-links">
+    <div class="dropdown">
+      <a href="test.html" aria-haspopup="true" aria-expanded="false">Courses ▼</a>
+      <div class="dropdown-content">
+        <a href="test.html#track-programming">Programming &amp; Software Development</a>
+        <a href="test.html#track-ai">AI &amp; Data Science</a>
+        <a href="test.html#track-network">Networking &amp; Cybersecurity</a>
+        <a href="test.html#track-design">Design &amp; Creativity</a>
+        <a href="test.html#track-businessmarketing">Business &amp; Marketing</a>
+        <a href="test.html#track-emerging">Emerging Technologies</a>
+        <a href="test.html#track-embedded">Embedded Systems</a>
+        <a href="test.html#track-elearning">E-learning</a>
+        <a href="test.html#track-freelancing">Freelancing</a>
+        <a href="test.html#track-testing">Software Testing</a>
+        <a href="test.html#track-python">Python Programming</a>
+        <a href="test.html#track-english">English Language</a>
+        <a href="test.html#track-gamedev">Game Development</a>
+        <a href="test.html#track-appdev">App Development</a>
+      </div>
+    </div>
+    <a href="../../Teacher.html">Instructors</a>
+    <a href="../../Community.html">AI Agent</a>
+    <a href="../../Community.html">Community</a>
+  </nav>
+
+  <div class="search-login">
+    <input type="text" placeholder="Search..." aria-label="Search courses">
+    <a href="#" class="subscribe-btn">Subscribe</a>
+    <a href="../../login.html" class="login-btn">Log in</a>
+    <a href="../../signup.html" class="signup-btn">Sign up</a>
+  </div>
+</header>
+
+<main class="content">
+  <section class="track-page-header">
+    <a href="../../Courses.html" class="back-to-tracks">&larr; Back to all tracks</a>
+    <h1>Programming & Software Development</h1>
+    <p class="track-description">Master the art of coding, build robust software, and develop cutting-edge applications. Our programming track covers everything from foundational languages to advanced frameworks, preparing you for a dynamic career in technology.</p>
+  </section>
+
+  <section class="track-section all-courses-view">
+    <div class="courses-grid">
+      <article class="course-card">
+        <h3>HTML &amp; CSS — Basics</h3>
+        <p>Learn the fundamental building blocks of web pages: structuring content with HTML and styling it with CSS. Understand responsive design principles to create beautiful and adaptable websites.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>JavaScript for Beginners</h3>
+        <p>Dive into the world of interactive web development. This course covers JavaScript variables, functions, DOM manipulation, event handling, and basic programming concepts essential for dynamic web applications.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>React.js — Introduction</h3>
+        <p>Explore React.js, a popular JavaScript library for building user interfaces. Learn about components, JSX syntax, state management, and props to create modern, single-page applications.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>Practical Project — Interactive Website</h3>
+        <p>Apply your HTML, CSS, and JavaScript knowledge to a real-world project. Build a fully interactive website from scratch, incorporating learned concepts and best practices.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>Python for Data Science</h3>
+        <p>Discover Python's power for data manipulation and analysis. Covers Pandas, NumPy, data visualization with Matplotlib/Seaborn, and an introduction to data cleaning techniques.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>Node.js &amp; Express.js Backend Development</h3>
+        <p>Learn to build robust server-side applications using Node.js and the Express.js framework. Covers RESTful APIs, database integration, and authentication fundamentals.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>Version Control with Git &amp; GitHub</h3>
+        <p>Master collaborative development using Git for version control and GitHub for remote repositories. Learn branching, merging, pull requests, and resolving conflicts.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+      <article class="course-card">
+        <h3>Algorithms &amp; Data Structures</h3>
+        <p>Understand the core concepts of efficient programming. Explore common algorithms and data structures, and learn how to analyze their performance and apply them to solve complex problems.</p>
+        <a class="course-btn" href="#">Course details</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="track-section ai-chatbot-section">
+    <header class="track-header">
+      <h2>AI Roadmap Customizer</h2>
+    </header>
+    <div class="chatbot-container">
+      <div class="api-key-input-container">
+        <label for="api-key-input">Enter your Gemini API Key:</label>
+        <input type="password" id="api-key-input" placeholder="Paste your API Key here" aria-label="Gemini API Key">
+        <button id="save-api-key-button">Save Key</button>
+        <span id="api-key-status"></span>
+      </div>
+      <div class="chat-history" id="chat-history">
+        <div class="chat-message ai-message">
+          Hello! I'm your AI Roadmap Customizer. To help me create a personalized learning path for you, please tell me about your current experience level in programming (e.g., 'Beginner,' 'Intermediate,' 'Advanced') and what your learning goals are.
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="user-input" placeholder="Type your message..." aria-label="Your message">
+        <button id="send-button">Send</button>
+      </div>
+      <div id="loading-indicator" class="loading-indicator hidden">
+        <div class="spinner"></div> Thinking...
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2024 SkillBridge. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  // Firebase configuration variables (globally available in Canvas environment)
+  const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+  const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+  const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+  // Chatbot DOM elements
+  const chatHistoryDiv = document.getElementById('chat-history');
+  const userInput = document.getElementById('user-input');
+  const sendButton = document.getElementById('send-button');
+  const loadingIndicator = document.getElementById('loading-indicator');
+  const apiKeyInput = document.getElementById('api-key-input');
+  const saveApiKeyButton = document.getElementById('save-api-key-button');
+  const apiKeyStatus = document.getElementById('api-key-status');
+
+  let chatHistory = []; // Stores the conversation for Gemini API
+  let currentApiKey = localStorage.getItem('geminiApiKey') || ''; // Load API key from local storage
+
+  // Set initial value of API key input
+  if (currentApiKey) {
+    apiKeyInput.value = currentApiKey;
+    apiKeyStatus.textContent = 'API Key loaded.';
+    apiKeyStatus.style.color = 'green';
+  }
+
+  // Function to display messages in the chat history
+  function displayMessage(sender, message) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('chat-message');
+    messageDiv.classList.add(sender === 'user' ? 'user-message' : 'ai-message');
+    messageDiv.innerHTML = message.replace(/\n/g, '<br>'); // Preserve newlines for formatting
+    chatHistoryDiv.appendChild(messageDiv);
+    chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight; // Scroll to bottom
+  }
+
+  // Function to call the Gemini API with exponential backoff
+  async function callGeminiAPI(history, retries = 3, delay = 1000) {
+    if (!currentApiKey) {
+      displayMessage('ai', 'Error: Gemini API Key is not set. Please enter your API key above and click "Save Key".');
+      loadingIndicator.classList.add('hidden');
+      return "Error: API Key not set.";
+    }
+
+    const payload = { contents: history };
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${currentApiKey}`;
+
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        const errorBody = await response.json(); // Attempt to parse error as JSON
+        console.error(`Gemini API Error: HTTP status ${response.status} - ${response.statusText}`, errorBody);
+        
+        let errorMessage = `Failed to fetch from Gemini API: ${response.status} ${response.statusText}`;
+        if (errorBody && errorBody.error && errorBody.error.message) {
+            errorMessage += ` - ${errorBody.error.message}`;
+        } else if (typeof errorBody === 'string') {
+            errorMessage += ` - ${errorBody}`;
+        }
+        
+        if (response.status === 429 && retries > 0) {
+          // Too many requests, retry with exponential backoff
+          await new Promise(res => setTimeout(res, delay));
+          console.warn(`Retrying API call... (attempt ${4 - retries})`);
+          return callGeminiAPI(history, retries - 1, delay * 2);
+        }
+        throw new Error(errorMessage);
+      }
+
+      const result = await response.json();
+      if (result.candidates && result.candidates.length > 0 &&
+          result.candidates[0].content && result.candidates[0].content.parts &&
+          result.candidates[0].content.parts.length > 0) {
+        return result.candidates[0].content.parts[0].text;
+      } else {
+        console.error("Gemini API response structure unexpected:", result);
+        return "Sorry, I couldn't generate a response due to an unexpected format from the AI. Please try again.";
+      }
+    } catch (error) {
+      console.error('Error calling Gemini API:', error);
+      return `An error occurred: ${error.message}. Please check the console for more details.`;
+    }
+  }
+
+  // Function to send message and get AI response
+  async function sendMessage() {
+    const userMessage = userInput.value.trim();
+    if (userMessage === '') return;
+
+    displayMessage('user', userMessage);
+    chatHistory.push({ role: 'user', parts: [{ text: userMessage }] });
+    userInput.value = '';
+    loadingIndicator.classList.remove('hidden');
+
+    try {
+      const aiResponse = await callGeminiAPI(chatHistory);
+      if (aiResponse !== "Error: API Key not set.") { // Only push AI response if no API key error
+         // The error message for API key is already displayed by displayMessage in callGeminiAPI
+         chatHistory.push({ role: 'model', parts: [{ text: aiResponse }] });
+      }
+    } catch (error) {
+      // Error message already displayed by callGeminiAPI's catch block
+    } finally {
+      loadingIndicator.classList.add('hidden');
+    }
+  }
+
+  // Event listener for saving API key
+  saveApiKeyButton.addEventListener('click', () => {
+    const newKey = apiKeyInput.value.trim();
+    if (newKey) {
+      localStorage.setItem('geminiApiKey', newKey);
+      currentApiKey = newKey;
+      apiKeyStatus.textContent = 'API Key saved successfully!';
+      apiKeyStatus.style.color = 'green';
+    } else {
+      localStorage.removeItem('geminiApiKey');
+      currentApiKey = '';
+      apiKeyStatus.textContent = 'API Key removed.';
+      apiKeyStatus.style.color = 'orange';
+    }
+  });
+
+  // Event listeners for chatbot interaction
+  sendButton.addEventListener('click', sendMessage);
+  userInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+</script>
+</body>
+</html>

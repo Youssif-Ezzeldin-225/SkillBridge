@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff; /* لبني */
+  margin: 0;
+  padding: 0;
+  color: #003366; /* أزرق غامق */
+}
+
+.header {
+  background-color: #007BFF; /* أزرق */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.teacher-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: 3px solid #007BFF;
+}
+
+.info h2 {
+  margin: 0;
+  color: #0056b3;
+}
+
+.videos {
+  padding: 2rem;
+  text-align: center;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 320px;
+  height: 180px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.05);
+}
